@@ -1,0 +1,44 @@
+body {
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 100px 30px auto 30px;
+  grid-template-areas: "header header"
+                       "menu menu"
+                       "sidebar content"
+                       "footer footer";
+}
+header {
+  grid-area: header;
+  background-color: grey;
+  vertical-align: center;
+}
+nav {
+  grid-area: menu;
+  background-color: silver;
+  text-align: right;
+}
+aside {
+  grid-area: sidebar;
+  background-color: cyan;
+}
+article {
+  grid-area: content;
+  background-color: white;
+}
+footer {
+  grid-area: footer;
+  background-color: lightblue;
+  text-align: center;
+}
+@media screen and (max-width: 680px) {
+  body {
+     grid-template-rows: 100px 30px auto auto 30px;
+     grid-template-columns: 100%;
+     grid-template-areas: "header"
+                          "menu"
+                          "content"
+                          "sidebar"
+                          "footer";
+  }
+}
