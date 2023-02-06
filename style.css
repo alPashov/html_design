@@ -7,6 +7,16 @@ body {
                        "menu menu"
                        "sidebar content"
                        "footer footer";
+  margin: 2rem;
+  font-family: 'Oswald', sans-serif;
+}
+h1, a, aside {
+  margin: 1.5rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: black;
 }
 header {
   grid-area: header;
